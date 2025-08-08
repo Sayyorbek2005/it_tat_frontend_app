@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:80" # HTTP uchun
-      - "8443:443" # HTTPS uchun
+      - "8444:443" # HTTPS uchun
     volumes:
       - /etc/letsencrypt/live/it-tat.uz/fullchain.pem:/etc/nginx/ssl/fullchain.pem
       - /etc/letsencrypt/live/it-tat.uz/privkey.pem:/etc/nginx/ssl/privkey.pem
