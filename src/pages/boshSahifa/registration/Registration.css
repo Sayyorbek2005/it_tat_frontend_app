@@ -1,0 +1,220 @@
+/* ? Ro'yxatdan o'tish */
+
+/* Asosiy stil */
+
+.royxatdan_otish {
+	padding: 100px 0px;
+}
+.royxatdan_otish .hero_from {
+	backdrop-filter: blur(10px);
+	background-color: rgba(255, 255, 255, 0.199);
+}
+.royxatdan_otish > h1 {
+	color: var(--white-color);
+	text-align: center;
+	/* margin-bottom: 50px; */
+	font-size: 2.5rem; /* Dinamik font */
+}
+
+.royxatdan_otish > .display > div > img {
+	width: 100%; /* Rasm kengligi responsiv */
+	height: 350px;
+	object-fit: contain;
+}
+
+.grids {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; /* Moslashuvchan grid */
+	gap: 15px;
+	margin-bottom: 50px;
+}
+
+.grids button {
+	padding: 15px;
+	color: var(--minus-blue-color);
+	border: 1px solid var(--white-color);
+	border-radius: 20px;
+	transform: rotate(5deg);
+	background-color: var(--white-color);
+	transition: all 0.3s ease;
+}
+
+.grids button:nth-child(even) {
+	background-color: var(--minus-blue-color);
+	color: var(--white-color);
+	transform: rotate(-5deg);
+}
+
+/* .grids button:hover {
+  transform: rotate(0deg);
+  background-color: var(--minus-blue-color);
+  color: var(--white-color);
+} */
+
+form {
+	padding: 25px;
+	border-radius: 15px;
+	background-color: rgb(32, 53, 216);
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	max-width: 600px; /* Maksimal kenglik */
+	margin: 0 auto; /* Markazda joylash */
+}
+
+form > h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
+	color: var(--white-color);
+}
+
+form > p {
+	margin-bottom: 20px;
+	color: var(--white-color);
+}
+
+form > input,
+:where(.css-dev-only-do-not-override-1v613y0).ant-select-single:not(
+		.ant-select-customize-input
+	)
+	.ant-select-selector {
+	outline: none;
+	padding: 15px 25px;
+	background-color: var(--white-color);
+
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border: 1px solid var(--white-color);
+	color: var(--minus-black-color);
+	width: 100%;
+}
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-select-outlined:not(
+		.ant-select-customize-input
+	)
+	.ant-select-selector {
+	border: 1px solid #d9d9d9;
+	background: #ffffff;
+	height: 150%;
+	width: 100% !important;
+}
+
+.ant-select-selector > span {
+	font-size: 16px;
+	font-weight: 400;
+}
+
+form > button {
+	color: var(--white-color);
+	background-color: transparent;
+	transition: all 0.4s ease;
+	width: 100%;
+	padding: 15px;
+	border-radius: 10px;
+	/* border: none; */
+	border: 1px solid var(--white-color);
+}
+
+form > button:hover {
+	background-color: var(--white-color);
+	color: var(--minus-blue-color);
+}
+
+form .select {
+	color: var(--minus-black-color);
+	margin-bottom: 100px !important;
+}
+
+/* ? Responsivlik qo‘shildi */
+@media (max-width: 768px) {
+	.royxatdan_otish > h1 {
+		font-size: 2rem;
+	}
+
+	.hero_from input,
+	.hero_from .select,
+	.hero_from button {
+		width: 100%;
+		margin-bottom: 16px;
+		box-sizing: border-box;
+	}
+	.hero_from .select {
+		display: block;
+	}
+	.hero_from button {
+		position: relative;
+		margin-bottom: 0;
+		margin-top: 20px;
+		margin-left: 0;
+		width: 100%;
+		left: 0px;
+	}
+	form {
+		padding: 20px;
+		margin-bottom: 50px;
+	}
+	/* form button {
+		margin-top: 50px;
+	} */
+	.grids {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	}
+	:where(.css-dev-only-do-not-override-1v613y0).ant-select-single:not(
+			.ant-select-customize-input
+		)
+		.ant-select-selector {
+		width: 80%;
+	}
+}
+
+@media (max-width: 400px) {
+	.hero_from {
+		height: auto;
+	}
+
+	.hero_from .select {
+		margin-bottom: 0px;
+	}
+
+	.hero_from button {
+		top: -30px;
+	}
+}
+
+@media (max-width: 480px) {
+	.royxatdan_otish > h1 {
+		font-size: 1.5rem;
+		/* padding: 70px 0 40px 0; */
+	}
+	.royxatdan_otish .display {
+		flex-direction: column; /* Moslashuvchan */
+	}
+	form {
+		width: 100%;
+	}
+	form > input {
+		width: 100%; /* To'liq kenglik */
+		margin: 0;
+	}
+
+	.form .select {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 435px) {
+	:where(.css-dev-only-do-not-override-1v613y0).ant-select-single:not(
+			.ant-select-customize-input
+		)
+		.ant-select-selector {
+		width: 315px;
+	}
+}
+/* @media(max-width:435px){
+     :where(.css-dev-only-do-not-override-1v613y0).ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+      width: 250px;
+    }
+  } */
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-select .ant-select-arrow {
+	margin-top: 2px;
+}

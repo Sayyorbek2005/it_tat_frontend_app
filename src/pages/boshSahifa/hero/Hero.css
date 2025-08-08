@@ -1,0 +1,288 @@
+/* ? hero */
+.hero {
+	text-align: center;
+}
+.hero h1 {
+	color: var(--plus-blue-color);
+	margin: 100px 45px 45px 45px;
+}
+
+.hero img {
+	width: 500px;
+	height: 380px;
+	object-fit: cover;
+	border: none;
+	border-radius: 12px;
+}
+
+/* ? hero_consultation */
+
+.hero_consultation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.courses {
+	border: 1px solid var(--minus-blue-color);
+	background-color: var(--minus-blue-color);
+	width: 220px;
+	height: 380px;
+	border-radius: 12px;
+	text-align: start;
+	padding: 1rem;
+}
+.courses > :first-child {
+	margin-top: 80px;
+}
+
+.courses button {
+	padding: 3px 12px;
+	border-radius: 5px;
+	border: 1px solid var(--white-color);
+	color: var(--white-color);
+	background-color: transparent;
+	display: block;
+	margin-bottom: 6px;
+	text-align: start;
+	transition: all 0.4s ease;
+}
+.courses button:hover {
+	background-color: var(--white-color);
+	color: var(--minus-blue-color);
+}
+
+.bepul_consultatsya {
+	border: 1px solid var(--minus-blue-color);
+	background-color: var(--minus-blue-color);
+	border-radius: 12px;
+	/* width: 448px; */
+	height: 380px;
+	color: var(--white-color);
+	text-align: start;
+	padding: 15px;
+	position: relative;
+}
+.bepul_consultatsya > :first-child {
+	margin-top: 150px;
+}
+.bepul_consultatsya > p {
+	margin-bottom: 30px;
+}
+/* .flex {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px;
+} */
+.bepul_consultatsya > button {
+	padding: 16px;
+	border: none;
+	border-radius: 10px;
+	color: var(--white-color);
+	background-color: var(--minus-blue-color);
+	transition: all 0.4s ease;
+	border: 1px solid var(--white-color);
+	font-weight: 500;
+	position: absolute;
+	bottom: 15px;
+	left: 15px;
+}
+
+.bepul_consultatsya > button:hover {
+	background-color: var(--white-color);
+	color: var(--minus-blue-color);
+}
+
+.flex > button:hover {
+	background-color: var(--white-color);
+	color: var(--minus-blue-color);
+}
+.flex > i {
+	color: var(--plus-blue-color);
+	background-color: var(--white-color);
+	border-radius: 50%;
+	font-size: 25px;
+}
+
+.ant-btn,
+.ant-modal-close {
+	display: none;
+}
+.ant-modal-content {
+	background-color: transparent;
+}
+:where(.css-dev-only-do-not-override-1v613y0).ant-modal .ant-modal-content {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+/* ? succesfull */
+.alert {
+	position: fixed;
+	top: 20px;
+	z-index: 999;
+	left: 50px;
+	right: 50px;
+	transition: all 0.4s ease;
+}
+
+/* ? Responsive Design */
+
+/*  (max-width: 768px) */
+@media (max-width: 768px) {
+	.hero_consultation {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.courses {
+		width: 100%;
+		text-align: center;
+	}
+
+	.bepul_consultatsya {
+		width: 100%;
+		text-align: center;
+	}
+
+	/* .flex {
+        justify-content: center;
+    } */
+
+	.bepul_consultatsya > button {
+		left: 50%;
+		transform: translateX(-50%);
+		width: 95%;
+	}
+
+	:where(.css-dev-only-do-not-override-1v613y0).ant-modal .ant-modal-content {
+		padding: 20px 50px;
+	}
+}
+
+/* (max-width: 480px) */
+@media (max-width: 550px) {
+	.hero h1 {
+		font-size: 24px;
+		margin: 20px;
+	}
+
+	.hero {
+		padding-top: 80px;
+	}
+
+	.courses > :first-child {
+		margin-top: 0;
+	}
+
+	.bepul_consultatsya {
+		height: 250px;
+	}
+
+	.bepul_consultatsya > :first-child {
+		margin: 0;
+		font-size: 20px;
+		text-align: left;
+	}
+
+	.hero img {
+		width: 100%;
+		height: auto;
+	}
+
+	.hero_consultation {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.courses,
+	.bepul_consultatsya {
+		width: 100%;
+		padding: 15px;
+	}
+	.courses > :first-child {
+		margin-top: 145px;
+	}
+	.courses {
+		height: auto;
+	}
+	.courses button:last-child {
+		margin: 0px;
+	}
+
+	.flex {
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.flex button {
+		width: 100%;
+	}
+
+	.hero_from {
+		width: 100%;
+	}
+}
+
+/*  (max-width: 360px) */
+@media (max-width: 400px) {
+	.hero h1 {
+		font-size: 20px;
+	}
+
+	.hero img {
+		max-width: 300px;
+	}
+
+	.courses,
+	.bepul_consultatsya {
+		max-width: 300px;
+	}
+}
+
+.hero_from {
+	position: relative;
+	backdrop-filter: blur(10px);
+	height: auto;
+	overflow: hidden;
+	background-color: var(--minus-blue-color);
+}
+
+.ant-modal-wrap {
+	/* background-color: red; */
+	backdrop-filter: blur(50px);
+}
+
+.hero_from > select {
+	position: absolute;
+	left: 25px;
+	right: 25px;
+	width: auto;
+}
+
+.hero_from > button {
+	position: relative;
+	width: 100%;
+}
+
+/* ? bor red  */
+
+.bor-red {
+	border: 2px solid red;
+}
+
+.bor-none {
+	border: none;
+}
+
+.bor-green {
+	border: 2px solid green;
+}
+
+.toast-container {
+	position: relative;
+	z-index: 999;
+}

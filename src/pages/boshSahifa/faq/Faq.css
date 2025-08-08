@@ -1,0 +1,133 @@
+/* ? Beriladigan savollar */
+
+/* Asosiy stil */
+.beriladigan_savollar{
+    margin-top: 100px;
+}
+.beriladigan_savollar > h1 {
+  text-align: center;
+  color: var(--plus-blue-color);
+  /* padding: 100px 0 50px 0; */
+  margin-bottom: 50px;
+  /* font-size: 2.5rem; Dinamik font */
+}
+
+.glossy {
+  width: 100%; /* Responsiv kenglik */
+  max-width: 300px; /* Maksimal kenglik */
+  height: auto; /* Proportionni saqlash */
+  transform: translate(0, 0); /* Oldingi translate olib tashlandi */
+  display: block; /* Block darajasida joylashuv */
+}
+
+.faq {
+  background-color: var(--minus-white-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.savollar_div_3 {
+  padding: 0px 10px;
+  background-color: var(--minus-white-color);
+  text-align: left;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Elementlarni markazlash */
+
+  max-width: 700px; /* Maksimal kenglik */
+
+  cursor: pointer;
+}
+
+
+.savollar_div_3 > img {
+  transition: all 0.4s ease;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  font-size: 30px;
+  color: var(--minus-blue-color); /* yoki #0000FF */
+}
+
+.savollar_div_3 > :first-child {
+  color: var(--plus-blue-color);
+}
+
+.savollar_div_3 > :nth-child(2) {
+  margin: 12px 0;
+  color: var(--minus-black-color);
+}
+
+.savollar_div_2 > :last-child {
+  margin-bottom: 50px;
+}
+
+.savollar_div_3 > .color_min_white {
+  color: var(--minus-black-color);
+  padding: 10px 10px;
+}
+
+.answer-box {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  margin: 5px 0px;
+  /* padding: 10px 15px; */
+}
+
+.answer-box.open {
+  max-height: 200px;
+  opacity: 1;
+}
+
+/*? Responsiv  */
+@media (max-width: 768px) {
+  .beriladigan_savollar > h1 {
+    font-size: 2rem;
+  }
+  .savollar_div_3 {
+    /* max-width: 90%; */
+    /* margin: 5px; */
+  }
+  .answer-box{
+    margin: 5px 0px;
+    padding: 10px 15px;
+
+  }
+  .beriladigan_savollar > .display {
+    flex-direction: column;
+  }
+
+  .glossy{
+    margin-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .beriladigan_savollar > h1 {
+    font-size: 1.5rem; /* Eng kichik ekran uchun */
+    /* padding: 70px 0 40px 0; */
+  }
+  .savollar_div_3 > :first-child {
+    font-size: 16px;
+  }
+  .glossy {
+    width: 100%;
+    max-width: 200px; /* Mobil ekranlar uchun */
+    margin-bottom: 50px;
+  }
+  .savollar_div_3 {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  .savollar_div_3 > img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,273 @@
+/* Default Styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.kurslar {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.kurslar > h1 {
+	margin: 50px 0;
+	color: var(--plus-blue-color);
+}
+
+.between_fist_div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--white-color);
+	border-radius: 20px;
+	/* padding: 10px 0; */
+	padding: 1rem;
+	/* height: 400px; */
+}
+.teacher_full_name {
+	color: var(--minus-blue-color);
+}
+
+.heightlinear {
+	width: 2px;
+	height: 100%;
+	background-color: var(--minus-gray-color);
+}
+
+.between {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	margin-bottom: 50px;
+}
+
+.grid-item {
+	text-align: center;
+	padding: 5px 10px;
+	background: var(--white-color);
+
+	border-radius: 10px;
+	max-width: 400px;
+	margin: auto;
+}
+
+.min_div > img {
+	width: auto;
+	height: 180px;
+	object-fit: cover;
+}
+
+.grid-item > h2 {
+	color: var(--minus-blue-color);
+	padding: 25px 0 5px 0;
+	font-size: 20px;
+}
+
+.grid-item > p {
+	color: var(--black-color);
+	font-size: 14px;
+	/* line-height: 1.5; */
+	/* padding: 0 10px; */
+}
+
+.min_div_text_cont {
+	display: none;
+}
+
+.grid-item > .display > h2 {
+	color: var(--minus-blue-color);
+}
+
+.max_div {
+	padding: 5px 10px;
+	text-align: left;
+}
+
+.grid-item .display {
+	justify-content: space-between;
+	display: flex;
+	/* flex-wrap: wrap; */
+	/* padding: 10px 20px; */
+}
+
+.grid-item .button {
+	background-color: var(--minus-blue-color);
+	color: var(--white-color);
+	padding: 10px 10px;
+	border-radius: 10px;
+	transition: 0.4s ease;
+	border: none;
+	width: 80%;
+	/* height: 50px; */
+	margin: 10px auto;
+	cursor: pointer;
+}
+
+.grid-item > .dis_none {
+	display: none;
+}
+
+.batafsil_malumot_button_2 > .dis_none {
+	display: none;
+}
+.button:hover {
+	background-color: var(--plus-blue-color);
+}
+.grid-item .def_none {
+	display: none;
+}
+
+.grid_bar {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.grid_bar p {
+	color: var(--minus-blue-color);
+	/* font-size: 16px; */
+	font-weight: bold;
+}
+
+.grid_bar span {
+	color: var(--minus-black-color);
+	font-size: 14px;
+}
+
+.grid-item > .dis_none {
+	display: none;
+}
+
+/*? Responsive Styles */
+@media (max-width: 1024px) {
+	.between,
+	.grid_bar {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 768px) {
+	.between,
+	.grid_bar {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.grid_bar {
+		grid-template-columns: repeat(2, 1fr);
+		text-align: left;
+	}
+
+	.between_fist_div {
+		flex-direction: column;
+		text-align: center;
+		/* padding: 15px; */
+	}
+
+	.grid-item {
+		width: 90%;
+	}
+	.batafsil_malumot_button_2 {
+		display: block;
+		width: 100%;
+	}
+
+	.batafsil_malumot_button_2 > button {
+		width: 100%;
+	}
+	.grid-item .button {
+		width: 100%;
+		margin: 0px;
+		/* padding: 0; */
+		margin: 0;
+	}
+	.grid-item > p {
+		margin-top: 15px;
+	}
+
+	.grid-item > .display {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.pages_big_div {
+		padding: 20px 0;
+		overflow-x: hidden;
+	}
+	.kurslar {
+		padding: 30px 0;
+	}
+
+	.kurslar > h1 {
+		font-size: 24px;
+		margin: 30px 0;
+	}
+
+	.between_fist_div {
+		height: auto;
+		padding: 0px;
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	.grid-item {
+		padding: 1rem 5%;
+		width: 100%;
+	}
+
+	.grid-item .none {
+		display: none;
+	}
+
+	.grid-item .def_none {
+		display: none;
+	}
+
+	.button_block {
+		display: block;
+	}
+
+	.min_div_none {
+		display: block;
+	}
+
+	.min_div_none > h2 {
+		margin-bottom: 10px;
+		color: var(--minus-blue-color);
+	}
+
+	.grid-item .button {
+		width: 100%;
+		padding: 20px 0px;
+		display: block;
+	}
+
+	.grid-item > .display {
+		display: none;
+	}
+	.batafsil_malumot_button_2 {
+		display: block;
+	}
+
+	.min_div_text_cont {
+		display: block;
+	}
+	.min_div_text_cont > h2 {
+		color: var(--minus-blue-color);
+	}
+	.min_div {
+		display: flex;
+		align-items: center;
+		/* justify-content: center; */
+		text-align: left;
+		gap: 20px;
+	}
+}
+
+.duration_month {
+	font-size: 50px;
+	color: aqua;
+}

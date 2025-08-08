@@ -1,0 +1,216 @@
+.lichTeacher {
+  padding-top: 80px;
+}
+
+.lichTeacher .display {
+  justify-content: left;
+  gap: 0px;
+  padding: 20px 0px;
+  cursor: pointer;
+}
+.dis_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.lichTeacher .display > i {
+  color: var(--minus-blue-color);
+}
+.teacher_cont {
+  background-color: var(--white-color);
+  padding: 50px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 70px;
+}
+.teacher_img > img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.teacher_about {
+  text-align: left;
+}
+
+.teacher_about h1 {
+  color: var(--plus-blue-color);
+}
+.teacher_about > :nth-child(2) {
+  color: var(--minus-blue-color);
+  line-height: 1.5;
+}
+.teacher_information {
+  margin: 25px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 10px;  */
+  text-align: left;
+  margin-right: 100px;
+}
+
+.teacher_information h2 {
+  color: var(--minus-blue-color);
+}
+
+.color_black {
+  color: var(--black-color);
+  line-height: 1.7;
+}
+
+/* ? Teacher portfolio */
+
+.teacher_portfolio {
+  text-align: center;
+  margin-top: 100px;
+}
+.teacher_portfolio > h1 {
+  color: var(--plus-blue-color);
+  margin-bottom: 50px;
+}
+
+.web_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.web_div {
+  padding: 15px;
+  /* width: 400px; */
+  text-align: left;
+  background-color: var(--white-color);
+  border-radius: 15px;
+}
+.web_div > .web_div_img {
+  width: 100%;
+}
+.web_div > :nth-child(2) {
+  margin: 15px 0px;
+}
+.web_div > :nth-child(3) {
+  color: var(--plus-blue-color);
+  margin-bottom: 15px;
+}
+.web_div > a {
+  color: var(--minus-blue-color);
+  text-decoration: dotted;
+}
+
+/* ? Bitiruvchilarimiz ishlayotgan kompaniyalar  */
+
+.work_Companies {
+  text-align: center;
+  padding: 100px 0px;
+}
+.work_Companies > :nth-child(1) {
+  color: var(--plus-blue-color);
+  margin-bottom: 15px;
+}
+.work_Companies > :nth-child(2) {
+  color: var(--minus-blue-color);
+  max-width: 581px;
+  margin: auto;
+}
+.work_companies_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ? lesson precess */
+
+.lesson_process {
+  text-align: center;
+  margin-bottom: 100px;
+  /* width: 100%; */
+}
+
+.lesson_process > h1 {
+  margin: 50px 0px;
+  color: var(--plus-blue-color);
+}
+
+.process > .video_lesson {
+  width: 100%;
+}
+
+.h1-idea{
+  color: var(--plus-blue-color);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .web_bar {
+    grid-template-columns: repeat(2, 1fr); /* 2 ustun bo‘ladi */
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+
+  
+}
+
+/* Mobil (480px gacha) */
+@media (max-width: 550px) {
+  .teacher_cont {
+    flex-wrap: wrap;
+  }
+
+  .lesson_process {
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  .web_bar {
+    flex-wrap: wrap;
+  }
+
+  .teacher_information {
+    margin-right: 0px;
+  }
+
+  .happy_students,
+  .experience {
+    margin-bottom: 20px;
+  }
+
+  .happy_students,
+  .Completed_Projects {
+    width: 170px;
+    height: 70px;
+  }
+
+  .experience,
+  .awards_won {
+    width: 80px;
+    height: 70px;
+  }
+
+  .web_div{
+    margin-bottom: 50px;
+
+  }
+ 
+
+
+   .teacher_img > img{
+    width: 100%;
+  }
+}
+
+/* Juda kichik ekranlar (400px gacha) */
+@media (max-width: 400px) {
+  .swiper-slide > img {
+    max-height: 250px;
+    border-radius: 5px;
+  }
+}

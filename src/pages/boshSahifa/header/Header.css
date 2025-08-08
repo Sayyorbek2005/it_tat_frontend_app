@@ -1,0 +1,460 @@
+/* ? header */
+
+header {
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+	background-color: var(--white-color);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	padding: 10px 0px;
+}
+
+.hed_max {
+	max-width: 1300px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+/* .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+} */
+
+.hed_max > img,
+.footer_logo {
+	transform: scale(0.9);
+	/* width: 100px; */
+	height: 65px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.2s ease-in-out;
+}
+
+.hed_max > img:hover,
+.footer_logo:hover {
+	animation: jello-horizontal 0.6s both;
+}
+
+@keyframes jello-horizontal {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		transform: scale3d(1.1, 0.9, 1);
+	}
+	40% {
+		transform: scale3d(0.9, 1.1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	65% {
+		transform: scale3d(0.98, 1.02, 1);
+	}
+	75% {
+		transform: scale3d(1.02, 0.98, 1);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	list-style: none;
+}
+
+li > a {
+	font-size: 16px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	font-family: 'MyFontTwo', sans-serif;
+	color: var(--black-color);
+	padding: 10px;
+}
+
+a.active {
+	color: #3d51e3;
+}
+
+li > a:hover {
+	color: var(--minus-blue-color);
+}
+.header_but_cont {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+/* Umumiy nav link */
+.nav-link {
+	color: black;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+/* Hover effekti */
+.nav-link:hover {
+	color: #3d51e3;
+}
+
+/* Aktiv link */
+.active-link {
+	color: #3d51e3;
+	font-weight: 600;
+}
+
+.header_but_cont > .flex {
+	color: var(--minus-blue-color);
+	display: flex;
+	align-items: center;
+	border: none;
+	cursor: pointer;
+}
+
+header > .flex {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.header_but_cont i {
+	font-size: 18px;
+}
+
+.header_but_cont > .button {
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	color: var(--minus-white-color);
+	background-color: var(--minus-blue-color);
+	font-family: 'MyFontTwo', sans-serif;
+	transition: all 0.3s ease;
+}
+.header_but_cont > .button:hover {
+	background-color: var(--plus-blue-color);
+}
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-modal .ant-modal-title {
+	font-size: 30px;
+	color: var(--white-color);
+	border-radius: 15px;
+}
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-modal .ant-modal-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: start;
+}
+
+/* ? versel */
+
+:where(.css-1v613y0).ant-modal .ant-modal-header {
+	color: rgba(0, 0, 0, 0.88);
+	background: blue;
+	border-radius: 8px 8px 0 0;
+	margin-bottom: 8px;
+	padding: 0;
+	border-bottom: none;
+}
+
+.m {
+	position: relative;
+	/* border-radius: 20px; */
+}
+.r {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: var(--white-color);
+}
+
+.ant-modal-title {
+	padding: 1rem;
+	width: 400px;
+	backdrop-filter: blur(10px);
+	height: 460px;
+	overflow: hidden;
+	background-color: var(--minus-blue-color);
+	color: var(--white-color);
+}
+
+@media (max-width: 767px) {
+	.ant-modal-title {
+		width: 90%;
+	}
+}
+
+:where(.css-dev-only-do-not-override-os2fvf).ant-modal .ant-modal-header {
+	border-radius: 15px;
+	background-color: #3d51e3 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: start;
+}
+
+/* ?icon animation */
+
+:where(.ant-modal).ant-modal .ant-modal-content {
+	background-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.cont_a_i {
+	border: 1px solid white;
+	display: inline-block;
+	border-radius: 10px;
+	width: 50px;
+	/* padding: 10px 15px; */
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	left: 45%;
+	/* transform: translate(-50% -50%); */
+}
+.icon_top {
+	padding: 5px 0px 2px 5px;
+	border-bottom: 1px solid white;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.icon_top p {
+	width: 3px;
+	height: 3px;
+	padding: 1px;
+	border-radius: 50%;
+	margin: 2px;
+	background-color: white;
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.bx-cog {
+	/* background-color: #3d51e3; */
+	color: white;
+	font-size: 30px;
+	font-weight: 300;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 5px;
+	/* Aylanish animatsiyasi */
+	animation: rotate 2s linear infinite;
+}
+
+.icon_top > .red {
+	background-color: red;
+}
+.icon_top > .aqua {
+	background-color: aqua;
+}
+.icon_top > .yellow {
+	background-color: yellow;
+}
+
+:where(.css-dev-only-do-not-override-1v613y0).ant-modal-root .ant-modal-wrap {
+	backdrop-filter: blur(10px);
+}
+
+.hed_max > .header_menu {
+	color: var(--minus-blue-color);
+	display: none;
+	font-size: 35px;
+}
+
+/* ? responsive */
+@media (max-width: 550px) {
+	.hed_max {
+		padding: 0px 0.6rem;
+	}
+
+	/* ? ul, number, button */
+	.hed_max > ul {
+		display: none;
+	}
+
+	a.active {
+		text-decoration: underline white;
+	}
+
+	.header_but_cont {
+		display: none;
+	}
+
+	/* ? menu  */
+	.hed_max > .header_menu {
+		display: block;
+	}
+
+	.my {
+		width: 40px;
+		height: 40px;
+		/* background-color: red; */
+		position: absolute;
+		right: 0px;
+		border-radius: 0px;
+		border-bottom-left-radius: 50px;
+		border-top-left-radius: 50px;
+		transition: all 0.4s ease;
+		/* padding: 0px 10px; */
+		padding-right: 26px;
+		/* margin: 5px; */
+		overflow: hidden; /* Ichki elementlarning chiqishining oldini oladi */
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.hed_max > .header_menu {
+		font-size: 40px;
+		margin-right: 6px;
+		/* position: absolute; */
+		border-radius: 50%;
+	}
+	a.active {
+		color: black;
+	}
+
+	/* Active (Click holati) */
+	.my.active {
+		width: 100%;
+		height: 80vh;
+		transform: scale(1.5);
+		top: 0px;
+		border-radius: 0px;
+		background-color: var(--minus-blue-color);
+		border-bottom-left-radius: 250px;
+		transition: all 0.5s ease;
+		position: absolute;
+		z-index: 999;
+		text-align: left;
+	}
+
+	.my .active ul {
+		text-align: left;
+	}
+
+	/* ? back click */
+	.overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.5); /* Qoramtir shaffof fon */
+		z-index: 10; /* Menyudan past bo‘lishi uchun */
+	}
+
+	.res_menu_ul {
+		margin: 100px 0px 50px 50px;
+		line-height: 15px;
+		/* background-color: red; */
+		width: 220px;
+		/* text-align: left; */
+		justify-content: flex-start;
+	}
+	.res_menu_ul > li > a {
+		color: var(--white-color);
+		font-size: 14px;
+	}
+	/* Child Container */
+	.max-w {
+		max-width: 1300px;
+		margin: auto;
+		padding-left: 3rem;
+	}
+
+	/* List Styling */
+	ul {
+		text-align: left;
+		list-style: none;
+		display: block;
+		align-items: center;
+		/* line-height: 20px; */
+		/* flex-direction: column; */
+	}
+
+	ul li {
+		color: white;
+		font-size: 14px;
+		margin-bottom: 0.5rem;
+	}
+
+	/* .header_but_cont > .button{
+    border: 1px solid white;
+    background-color: var(--white-color);
+    color: var(--minus-blue-color);
+    
+  }
+   */
+
+	.res_menu_ul > button {
+		padding: 10px;
+		font-size: 14px;
+		font-weight: 400;
+		border-radius: 10px;
+		/* background-color: yellow; */
+		border: 1px solid var(--white-color);
+		background-color: var(--minus-blue-color);
+		color: var(--white-color);
+		margin-left: 10px;
+	}
+	.res_menu_ul > button:hover {
+		background-color: var(--white-color);
+		color: var(--minus-blue-color);
+	}
+
+	.items-center {
+		/* display: flex;
+    align-items: center;
+    justify-content: flex-start; */
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.items-center .bx-phone {
+		background-color: var(--minus-blue-color);
+		color: var(--white-color);
+		font-size: 20px;
+	}
+
+	.items-center > a {
+		color: var(--white-color);
+		font-size: 14px;
+	}
+}
+/* ? responsive modal open */
+
+/* i{
+  font-size: 50px;
+  position: absolute;
+  z-index: 999;
+} */

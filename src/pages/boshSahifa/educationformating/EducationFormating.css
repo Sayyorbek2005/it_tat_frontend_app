@@ -1,0 +1,110 @@
+
+/* ? talim formati */
+
+.talim_formati {
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    color: var(--white-color);
+  }
+  .talim_formati > h2 {
+    padding-bottom: 50px;
+  }
+  .talim_cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .individual {
+    /* width: 500px; */
+    height: 500px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 30px 30px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+  }
+  .talim_cont h2 {
+    color: var(--minus-blue-color);
+    padding-bottom: 10px;
+  }
+  .talim_cont p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--minus-black-color);
+  }
+  .individual > img {
+    width: 350px;
+    height: auto;
+    position: absolute;
+    right: -40px;
+  }
+  .miniGruh {
+    margin-bottom: 20px;
+  }
+  .miniGruh,
+  .gruh {
+    border-radius: 20px;
+    background-color: var(--white-color);
+    padding: 30px 30px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 240px;
+  }
+  .miniGruh > div,
+  .gruh > div {
+    width: 50%;
+  }
+  .miniGruh > img,
+  .gruh > img {
+    width: 250px;
+  }
+  
+  
+  /* ? Responsive Design */
+@media (max-width: 1024px) {
+    .talim_cont {
+        flex-direction: column;
+        align-items: center;
+    }
+    .miniGruh, .gruh {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .miniGruh > div, .gruh > div {
+        width: 100%;
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .talim_formati {
+        /* padding: 70px 0px 40px 0px; */
+    }
+    .miniGruh, .gruh {
+        padding: 25px;
+        height: auto;
+    }
+    .individual {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .talim_formati > h2 {
+        font-size: 32px;
+        padding-bottom: 30px;
+    }
+    .miniGruh, .gruh {
+        padding: 20px;
+        text-align: left;
+    }
+    .individual > img {
+        right: 0;
+        width: 80%;
+    }
+}

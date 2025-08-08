@@ -1,0 +1,209 @@
+
+
+
+/* ? menu */
+menu {
+  text-align: center;
+  padding-top: 100px;
+}
+
+menu > h2 {
+  color: var(--white-color);
+  /* padding: 100px 0px 50px 0px; */
+}
+
+.dasturlash_6_oy {
+  color: var(--plus-blue-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+.linear {
+  height: 1px;
+  /* width: 30px; */
+  background-color: var(--plus-blue-color);
+}
+
+strong {
+ 
+  background-color: var(--minus-blue-color);
+  color: var(--white-color);
+  padding: 3px 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+/* Grid layout */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 50px 0px;
+  justify-content: space-between;
+}
+
+.menu > div {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  padding: 30px 25px 0px 25px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+  overflow: hidden;
+  text-align: start;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.menu > div:hover {
+  box-shadow: 0px 0px 10px 3px gainsboro;
+  transform: translateY(-10px);
+}
+
+.display_beetven {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.display_beetven > h2,
+.display_beetven > h4 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.display_beetven > h2 {
+  color: var(--minus-blue-color);
+  padding: 10px 0px;
+}
+
+.display_beetven > h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 25px;
+  background: linear-gradient(90deg, rgb(89, 109, 255), rgb(217, 29, 211));
+  border-radius: 50px;
+  color: var(--white-color);
+  margin: 10px 0px;
+}
+
+menu img {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  right: -130px;
+  bottom: -110px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.p_color {
+  color: var(--minus-black-color);
+  position: relative;
+  z-index: 90;
+}
+.arrow_modal {
+  padding: 15px 30px;
+  color: var(--minus-blue-color);
+  background-color: var(--white-color);
+  border-radius: 18px;
+  border: 3px solid var(--minus-blue-color);
+  font-size: 30px;
+  transition: all 0.4s ease;
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  z-index: 99;
+}
+
+.menu i:hover {
+  background-color: var(--minus-blue-color);
+  color: var(--white-color);
+}
+
+/* ? versel */
+
+:where(.css-1v613y0).ant-modal .ant-modal-title {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  background: blue;
+  box-shadow: none;
+}
+
+:where(.css-1v613y0).ant-modal .ant-modal-content {
+  position: relative;
+  background-color: blue;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: none;
+  pointer-events: auto;
+  padding: 20px 24pgit x;
+}
+
+:where(.css-1v613y0).ant-modal .ant-modal-content {
+  position: relative;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+
+  pointer-events: auto;
+  padding: 20px 24px;
+}
+
+/*  ? versel frontend kursi */
+
+:where(.css-1v613y0).ant-modal .ant-modal-content {
+  position: relative;
+  background-color: none;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 8px;
+  pointer-events: auto;
+  padding: 20px 24px;
+}
+
+:where(.css-1v613y0).ant-modal .ant-modal-header {
+  color: rgba(0, 0, 0, 0.88);
+  background: blue;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 8px;
+  padding: 0;
+  border-bottom: none;
+}
+
+:where(.css-1v613y0).ant-modal .ant-modal-title {
+  margin: 0;
+  /* color: rgba(0, 0, 0, 0.88); */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 550px) {
+  menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
