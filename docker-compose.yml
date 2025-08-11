@@ -1,15 +1,10 @@
-
 services:
   frontend:
     build:
-      context: . # React loyiha papkasi
+      context: .
       dockerfile: Dockerfile
     ports:
-      - "8080:80" # HTTP uchun
-      - "8444:443" # HTTPS uchun
-    volumes:
-      - /etc/letsencrypt/live/it-tat.uz/fullchain.pem:/etc/nginx/ssl/fullchain.pem
-      - /etc/letsencrypt/live/it-tat.uz/privkey.pem:/etc/nginx/ssl/privkey.pem
+      - "8081:8081"
     networks:
       - frontend-network
     restart: always
