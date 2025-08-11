@@ -1,12 +1,15 @@
-version: "3"
+version: '3.8'
 
 services:
   frontend:
-    build: .
+    image: nginx:latest
+    container_name: it_tat_frontend
     ports:
-      - "443:443"
       - "80:80"
+      - "443:443"
     volumes:
-      - /etc/letsencrypt/live/it-tat.uz/fullchain.pem:/etc/nginx/ssl/fullchain.pem
-      - /etc/letsencrypt/live/it-tat.uz/privkey.pem:/etc/nginx/ssl/privkey.pem
-    restart: always
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./frontend:/usr/share/nginx/html:ro
+      - /etc/letsencrypt/live/it-tat.uz-0001:/etc/letsencrypt/live/it-tat.uz-0001:ro
+      - /etc/letsencrypt/archive/it-tat.uz-0001:/etc/letsencrypt/archive/it-tat.uz-0001:ro
+    restart: unless-stopped
