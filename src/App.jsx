@@ -40,6 +40,8 @@ const App = () => {
 
 	return (
 		<>
+
+		{/* <Route path='*' element={<NotFound />} /> */}
 			<ScrollToTop />
 			<Header />
 
@@ -55,7 +57,7 @@ const App = () => {
 					<Route path='/kurslar/kurs/:id' element={<ProgrammingCourse />} />
 					<Route path='/registration' element={<Registration />} />
 					{/* <Route path='/RoyxatdanOtish' element={<RoyxatdanOtish />} /> */}
-					<Route path='*' element={<NotFound />} />
+					
 				</Routes>
 			</Suspense>
 
