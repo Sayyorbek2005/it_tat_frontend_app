@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://it-tat.uz/sitemap.xml
+s
