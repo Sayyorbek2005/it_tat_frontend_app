@@ -40,28 +40,25 @@ const App = () => {
 
 	return (
 		<>
-
-		{/* <Route path='*' element={<NotFound />} /> */}
-			<ScrollToTop />
+	<h1>Hello Man</h1>
+			{/* <ScrollToTop />
 			<Header />
 
 			<Suspense fallback={<Loading />}>
 				<Routes>
 					<Route path='/' element={<BoshSahifa />} />
 					<Route path='/ustozlar' element={<Teachers />} />
-
 					<Route path='/kurslar' element={<Kurslar />} />
 					<Route path='/online-kurslar' element={<OnlineCourses />} />
-					{/* <Route path='/courseAndPrice' element={<CoursesAndPrice />} /> */}
 					<Route path='/ustozlar/ustoz/:id' element={<LichTeacher />} />
 					<Route path='/kurslar/kurs/:id' element={<ProgrammingCourse />} />
 					<Route path='/registration' element={<Registration />} />
-					{/* <Route path='/RoyxatdanOtish' element={<RoyxatdanOtish />} /> */}
-					
+					<Route path='*' element={<NotFound />} />
+
 				</Routes>
 			</Suspense>
 
-			<Footer />
+			<Footer /> */}
 
 			{/* Toast xabarlari */}
 			<ToastContainer
