@@ -1,3 +1,5 @@
+version: "3.8"
+
 services:
   frontend:
     build:
@@ -5,12 +7,25 @@ services:
       dockerfile: Dockerfile
     image: it_tat_frontend:latest
     container_name: it_tat_frontend
+
     ports:
       - "80:80"
       - "443:443"
+
+    # Faqat nginx.conf va SSL fayllari montaj qilinadi.
+    # build/dist PAPKASINI MOUNT QILMAYMIZ — image ichida bo'ladi.
     volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
       - /etc/letsencrypt/live/it-tat.uz-0001/fullchain.pem:/etc/ssl/certs/fullchain.pem:ro
       - /etc/letsencrypt/live/it-tat.uz-0001/privkey.pem:/etc/ssl/private/privkey.pem:ro
+
     environment:
       - TZ=Asia/Tashkent
+
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O- http://localhost/ >/dev/null 2>&1 || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
     restart: unless-stopped
