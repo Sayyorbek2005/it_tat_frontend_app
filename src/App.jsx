@@ -32,7 +32,6 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid natus perspiciatis fuga? Ea voluptatum porro fuga quos, placeat atque maxime animi cumque optio ab est exercitationem eum aut, debitis quaerat. Repudiandae tenetur, incidunt reprehenderit quo alias dolore debitis earum quod ullam sed omnis explicabo cupiditate ducimus perferendis laboriosam, delectus quae aspernatur ex. Pariatur illum, at magni dignissimos sequi iure a quidem ab necessitatibus sapiente similique, nisi neque, alias harum placeat itaque reprehenderit esse natus minima doloribus enim vitae quis minus! Ducimus quaerat quas earum minima deleniti molestias, molestiae et quibusdam tempore aspernatur laudantium atque? Modi quidem vitae odio dignissimos tempora!</h1>
       <Header />
 
       <Suspense fallback={<Loading />}>
