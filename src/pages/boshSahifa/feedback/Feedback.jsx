@@ -107,6 +107,7 @@ const Feedback = () => {
 			>
 				{feedbak_video?.map((video, index) => (
 					<div className='video' key={index}>
+						<video ref={videoRef} controls autoPlay>
 						<i
 							onClick={() => {
 								if (videoRef.current) videoRef.current.pause()
@@ -114,7 +115,6 @@ const Feedback = () => {
 							}}
 							className='bx bx-x video-close'
 						></i>
-						<video ref={videoRef} controls autoPlay>
 							<source src={video.video_url} type='video/mp4' />
 						</video>
 					</div>

@@ -266,9 +266,12 @@ const ProgrammingCourse = () => {
 
 					<div className='background_m_g'>
 						<div className='max-width'>
+							<div className="daraja-oylik-center">
+
 							<h1>
-								Darajaga qarab oylik <br /> statistikasi
+								Darajaga qarab oylik statistikasi
 							</h1>
+							</div>
 							<div className='statistica_bar'>
 								{['Dunyo', "O'zbekiston"].map((region, idx) => (
 									<div
@@ -284,7 +287,7 @@ const ProgrammingCourse = () => {
 
 												const getSalary = value => {
 													if (!value || isNaN(value)) return '-'
-													return parseInt(value).toLocaleString() + ' $'
+													return parseInt(value).toLocaleString() + ' so`m'
 												}
 
 												if (region === "O'zbekiston") {
